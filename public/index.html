@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro App</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Pomodoro</h1>
+
+    <div class="settings">
+      <label>Trabajo: <input type="number" id="workTime" value="25" /> min</label>
+      <label>Descanso corto: <input type="number" id="shortBreak" value="5" /> min</label>
+      <label>Descanso largo: <input type="number" id="longBreak" value="15" /> min</label>
+    </div>
+
+    <!-- Bloque de estado eliminado -->
+    <h2 id="cycleTitle" class="cycle-title">Trabajo</h2>
+    <div id="motivationalMsg" class="motivational-msg">¡Concéntrate y da lo mejor de ti!</div>
+
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <div class="history">
+      <h3>Estadísticas</h3>
+      <div>Ciclos completados hoy: <span id="cyclesToday">0</span></div>
+      <div id="sessionHistory"></div>
+    </div>
+
+    <div class="controls">
+      <button>Iniciar</button>
+      <button>Pausar</button>
+      <button>Reiniciar</button>
+    </div>
+    <button id="themeToggle" aria-label="Alternar tema claro/oscuro" style="position:absolute;top:10px;right:10px;">🌙</button>
+  </div>
+
+  <script type="module" src="../src/index.js"></script>
+</body>
+</html>

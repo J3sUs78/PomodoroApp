@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f44336;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .app {
+    text-align: center;
+    background: #fff3f3;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .settings input {
+    width: 50px;
+    margin: 5px;
+  }
+  /* Animación del temporizador */
+  .timer {
+    font-size: 60px;
+    margin: 20px 0;
+    transition: color 0.5s, background 0.5s;
+  }
+
+  /* Tema oscuro */
+  body.dark {
+    background: #222;
+    color: #eee;
+  }
+  body.dark .app {
+    background: #333;
+    color: #eee;
+  }
+  body.dark .controls button {
+    background: #444;
+    color: #fff;
+  }
+  body.dark .controls button:hover {
+    background: #222;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .app {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .timer {
+      font-size: 36px;
+    }
+    .controls button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+
+  .cycle-title {
+    font-size: 2em;
+    margin: 10px 0 0 0;
+  }
+  .controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+  .controls button:hover {
+    background: #d32f2f;
+  }
+  .motivational-msg {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f44336;
+    font-weight: bold;
+  }
+  body.dark .motivational-msg {
+    color: #ffb74d;
+  }
+  
